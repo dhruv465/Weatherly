@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherly</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="bg-white">
+        <div class="max-w-7xl mx-auto">
+            <header class="flex justify-between p-4 border-b">
+                <h1 class="text-xl font-semibold">
+                    Weatherly
+                </h1>
+                <div class="flex space-x-4"><input
+                        class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                        placeholder="Search any city"><span
+                        class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full"><span
+                            class="flex h-full w-full items-center justify-center rounded-full bg-muted">
+                            <img src="./assets/profile.jpeg" alt="">
+                        </span></span></div>
+            </header>
+            <main class="py-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                    <div class="rounded-lg overflow-hidden"><iframe alt="Map" class="w-full h-auto" height="300"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15283582.804184785!2d72.11322334735975!3d20.736868731351798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1709748755894!5m2!1sen!2sin"
+                            style="aspect-ratio:600/300;object-fit:cover" width="600" style="border:0;"
+                            allowfullscreen="" loading="lazy"></iframe></div>
+
+
+                </div>
+
+                <div class="mt-4">
+                    <h2 class="text-lg font-semibold mb-2">
+                        Weather Forecast
+                    </h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div class="rounded-lg border text-card-foreground shadow-sm bg-gray-100" data-v0-t="card">
+                            <div class="p-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="text-gray-400">
+                                    <circle cx="12" cy="12" r="4"></circle>
+                                    <path d="M12 2v2"></path>
+                                    <path d="M12 20v2"></path>
+                                    <path d="m4.93 4.93 1.41 1.41"></path>
+                                    <path d="m17.66 17.66 1.41 1.41"></path>
+                                    <path d="M2 12h2"></path>
+                                    <path d="M20 12h2"></path>
+                                    <path d="m6.34 17.66-1.41 1.41"></path>
+                                    <path d="m19.07 4.93-1.41 1.41"></path>
+                                </svg>
+                                <p>
+                                    Today
+                                </p>
+                                <p>
+                                    New York, NY
+                                </p>
+                                <p>
+                                    72 F
+                                </p>
+                            </div>
+                        </div>
+                        <div class="rounded-lg border text-card-foreground shadow-sm bg-gray-100" data-v0-t="card">
+                            <div class="p-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="text-gray-400">
+                                    <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                                </svg>
+                                <p>
+                                    Tomorrow
+                                </p>
+                                <p>
+                                    New York, NY
+                                </p>
+                                <p>
+                                    75 F
+                                </p>
+                            </div>
+                        </div>
+                        <div class="rounded-lg border text-card-foreground shadow-sm bg-gray-100" data-v0-t="card">
+                            <div class="p-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="text-gray-400">
+                                    <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
+                                    <path d="M16 14v6"></path>
+                                    <path d="M8 14v6"></path>
+                                    <path d="M12 16v6"></path>
+                                </svg>
+                                <p>
+                                    Monday
+                                </p>
+                                <p>
+                                    New York, NY
+                                </p>
+                                <p>
+                                    78 F
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h2 class="text-lg font-semibold mb-2">
+                        Music Player
+                    </h2>
+                    <div class="rounded-lg border text-card-foreground shadow-sm bg-gray-100" data-v0-t="card">
+                        <div class="p-6">
+                            <div class="flex items-center space-x-4"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="text-gray-400">
+                                    <path d="M9 18V5l12-2v13"></path>
+                                    <circle cx="6" cy="18" r="3"></circle>
+                                    <circle cx="18" cy="16" r="3"></circle>
+                                </svg>
+                                <div class="flex-1">
+                                    <p class="font-semibold">Playing Now</p>
+                                    <p>Sunny Day Playlist</p>
+                                </div><button
+                                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="h-6 w-6">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg></button><button
+                                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="h-6 w-6">
+                                        <rect width="4" height="16" x="6" y="4"></rect>
+                                        <rect width="4" height="16" x="14" y="4"></rect>
+                                    </svg></button><button
+                                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="h-6 w-6">
+                                        <polygon points="5 4 15 12 5 20 5 4"></polygon>
+                                        <line x1="19" x2="19" y1="5" y2="19"></line>
+                                    </svg></button>
+                            </div>
+                            <div class="mt-4"><label class="block mb-2 text-sm font-medium text-gray-900" for="volume">
+                                    Volume
+                                </label><input class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
+                                    id="volume" max="100" min="0" type="range" name="volume"></div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
